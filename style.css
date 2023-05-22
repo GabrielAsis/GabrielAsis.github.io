@@ -28,6 +28,11 @@
     padding: 0px;
 }
 
+html{
+    scroll-behavior: smooth;
+
+}
+
 body{
     background-color: #343f4f;
 }
