@@ -265,42 +265,38 @@ body{
     white-space: nowrap;
     cursor: pointer;
     overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    scroll-behavior: auto;
+    cursor: grab;
 }
 
 .carousel img{
     height: 300px;
     object-fit: cover;
-    margin-left: 14px;
     width: calc(100%/3);
-    border: solid #343f4f 2px;
-    border-radius: 20px;
-}
-
-.carousel img:first-child{
-    margin: 0px;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom right, rgb(21, 21, 52), rgb(114, 114, 172)) border-box;
+    border-radius: 15px;
+    border: 4px solid transparent;
+    margin-left: 14px;
 }
 
 .merch i{
     font-size: 20px;
     cursor: pointer;
     position: relative;
-    width: 46px;
-    height: 40px;
-    background-image: linear-gradient(to bottom right, rgb(67, 67, 114), rgb(114, 114, 172)) ;
-    border-radius: 50%;
     text-align: center;
-    line-height: 40px;
     padding: 0px;
-    color: rgb(215, 215, 215);
 }
 
 .merch i:first-child{
-    background-image: linear-gradient(to bottom right, rgb(67, 67, 114), rgb(114, 114, 172)) ;
     left: 20px;
 }
 
 .merch i:last-child{
-    background-image: linear-gradient(to bottom left, rgb(67, 67, 114), rgb(114, 114, 172)) ;
     right: 20px;
 }
 
