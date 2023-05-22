@@ -1,0 +1,262 @@
+@font-face {
+    font-family:"God of War";
+    src: url(fonts/GODOFWAR.TTF);
+}
+
+@font-face {
+    font-family:"Ragnorak";
+    src: url(fonts/Berserker-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Norse Bold";
+    src: url(fonts/NorseBold-2Kge.otf);
+}
+
+@font-face {
+    font-family:"Norse";
+    src: url(fonts/Norse-KaWl.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(226, 223, 223);
+}
+
+.heading{
+    position: absolute ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-family: "God of War";
+    color: rgb(214, 214, 214);
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.of{
+    color: rgb(136, 51, 51);
+}
+
+.bgimage{
+    margin-top: 41px;
+    background-image: url("Images/gow bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-image: linear-gradient(80deg, rgb(38, 113, 162), rgb(31, 47, 152));
+    margin-top: 0px;
+    padding-top: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+.nav-link{
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    width: 20%;
+    font-family: "Norse";
+    font-size: 25px;
+    text-shadow: 0px 0px 15px black;
+}
+
+.nav-link{
+    transition: all 0.3s ease 0s;
+}
+
+.nav-link:hover{
+    transition: all 0.3s ease 0s;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content{
+    margin: 15px 0px;
+    padding: 0px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 15px black;
+}
+
+.sect{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.sect-title{
+    font-family: "Norse Bold";
+    font-size: 50px;
+    
+}
+
+.desc{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+}
+
+#about{
+    margin: 20px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    border-style: dotted;
+}
+
+#about-desc{
+    font-size: 17px;
+}
+
+#games{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.games-box{
+    margin: 15px;
+    background-image: linear-gradient(to bottom right, rgb(5, 5, 71), rgb(114, 114, 172));
+    border-radius: 12px;
+    width: 350px;
+    display: inline-block;
+    box-shadow: 0 0 15px black;
+    transition: 0.1s ease;
+}
+
+.games-box:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.games-title{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    margin: 0px;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    font-size: 18px;
+    word-spacing: 3px;
+    text-align: left;
+}
+
+.year{
+    float: right;
+    color: rgb(41, 41, 41);
+}
+
+.console{
+    position: absolute;
+    left: 5px;
+    bottom: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 5px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+}
+
+.game-image{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+}
+
+.slide-animation{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: 1s ease;
+}
+
+.slide{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+.fade-animation{
+    opacity: 0;
+    transition: 3s EASE;
+}
+
+.fade{
+    opacity: 1;
+}
+
+.games-box:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.games-box:nth-child(3){
+    transition-delay: 400ms;
+
+}
+
+.games-box:nth-child(4){
+    transition-delay: 0s;
+
+}
+
+.games-box:nth-child(5){
+    transition-delay: 200ms;
+
+}
+
+.games-box:nth-child(6){
+    transition-delay: 400ms;
+
+}
+
+.games-box:nth-child(7){
+    transition-delay: 0ms;
+
+}
+
+.games-box:nth-child(8){
+    transition-delay: 200ms;
+
+}
+
+.merch{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
