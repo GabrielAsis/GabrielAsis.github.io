@@ -78,3 +78,9 @@ document.addEventListener("mousemove", dragging);
 carousel.addEventListener("touchmove", dragging);
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+//stick nav
+window.addEventListener("scroll", function(){
+    var nav=document.querySelector("nav");
+    nav.classList.toggle("sticky", window.scrollY > 650)
+})

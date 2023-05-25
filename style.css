@@ -1,3 +1,5 @@
+/*imported fonts*/
+
 @font-face {
     font-family:"God of War";
     src: url(fonts/GODOFWAR.TTF);
@@ -39,39 +41,22 @@ body{
     background-color: #343f4f;
 }
 
-.heading{
-    position: absolute ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 50px;
-    font-family: "God of War";
-    color: rgb(214, 214, 214);
-    background-color: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
-}
-
-.of{
-    color: rgb(136, 51, 51);
-}
-
+/*background gif*/
 .bgimage{
-    margin-top: 41px;
-    background-image: url("Images/god\ of\ war\ animated\ logo.gif");
+    background-image: url("Images/logo\ reveal\ cropped.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     height: 100vh;
 }
 
-.nav{
+/*navigation bar*/
+nav{
     width: 100%;
     display: flex;
     flex-direction: row;
     text-align: center;
-    background-image: linear-gradient(80deg, rgb(38, 113, 162), rgb(31, 47, 152));
+    background-color: rgba(0, 0, 0, 0), rgba(0, 0, 0, 0);
     margin-top: 0px;
     padding-top: 0px;
     position: fixed;
@@ -79,34 +64,54 @@ body{
     z-index: 9999;
 }
 
+/*navigation link*/
 .nav-link{
     margin: auto;
     text-decoration: none;
     color: white;
     cursor: pointer;
-    padding: 8px;
+    padding: 15px;
     width: 20%;
     font-family: "Norse";
-    font-size: 25px;
+    font-size: 30px;
     text-shadow: 0px 0px 15px black;
+    border-radius: 50px;
+}
+
+/*sticky nav*/
+.sticky .nav-link{
+    padding: 8px;
+    font-size: 25px;
+}
+
+.sticky{
+    background-image: linear-gradient(to bottom right, rgb(38, 113, 162), rgb(31, 47, 152));
 }
 
 .nav-link{
-    transition: all 0.3s ease 0s;
+    transition: 0.3s ease;
 }
 
 .nav-link:hover{
-    transition: all 0.3s ease 0s;
+    transition: 0.3s ease;
     background-color: rgba(255, 255, 255, 0.5);
     color: rgba(0, 0, 0);
 }
 
+.nav-link:active{
+    transition: 0.2s ease;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0);
+}
+
+/*container for maint content*/
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*main content of page*/
 .main-content{
     margin: 15px 0px;
     padding: 0px;
@@ -116,18 +121,21 @@ body{
     box-shadow: 0 0 15px black;
 }
 
+/*.sect div*/
 .sect{
     text-align: center;
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
+/*title for each section*/
 .sect-title{
     font-family: "Norse Bold";
     font-size: 50px;
     
 }
 
+/*desription for each section*/
 .desc{
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
@@ -136,9 +144,10 @@ body{
     margin: auto;
 }
 
+/*about section*/
 #about{
     margin: 20px;
-    height: 50vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -148,18 +157,21 @@ body{
     margin-top: 10px;
 }
 
+/*about description*/
 #about-desc{
     font-size: 17px;
 }
 
+/*games section*/
 #games{
     text-align: center;
     padding: 0;
 }
 
+/*each game's div*/
 .games-box{
     margin: 15px;
-    background-image: linear-gradient(to bottom right, rgb(5, 5, 71), rgb(114, 114, 172));
+    background-image: linear-gradient(to bottom right, rgb(11, 12, 49), rgb(46, 86, 112),rgb(84, 170, 228));
     border-radius: 12px;
     width: 350px;
     display: inline-block;
@@ -183,11 +195,13 @@ body{
     text-align: left;
 }
 
+/*year in games-box*/
 .year{
     float: right;
     color: rgb(41, 41, 41);
 }
 
+/*console in games-box*/
 .console{
     position: absolute;
     left: 5px;
@@ -200,11 +214,13 @@ body{
     font-size: 12px;
 }
 
+/*image in game-box*/
 .game-image{
     border-radius: 10px 10px 0px 0px;
     width: 100%;
 }
 
+/*slide animation before*/
 .slide-animation{
     opacity: 0;
     filter: blur(5px);
@@ -212,21 +228,25 @@ body{
     transition: 1s ease;
 }
 
+/*slide animation after*/
 .slide{
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
 }
 
+/*fade animation before*/
 .fade-animation{
     opacity: 0;
-    transition: 3s EASE;
+    transition: 2s ease;
 }
 
+/*fade animation after*/
 .fade{
     opacity: 1;
 }
 
+/*delay for each game-box child*/
 .games-box:nth-child(2){
     transition-delay: 200ms;
 }
@@ -261,11 +281,13 @@ body{
 
 }
 
+/*merch section*/
 #merch{
     margin-top: 150px;
     margin-bottom: 150px;
 }
 
+/*merch div*/
 .merch{
     margin: 0px;
     padding: 0px;
@@ -275,33 +297,44 @@ body{
 
 }
 
+/*carousel*/
 .merch .carousel{
     white-space: nowrap;
-    cursor: pointer;
     overflow: hidden;
     scroll-behavior: smooth;
+    cursor: grab;
 }
 
+/*carousel dragging*/
 .carousel.dragging{
     scroll-behavior: auto;
     cursor: grab;
 }
 
+/*merch image & figcaption*/
 figure{
     display: inline-block;
 }
 
+/*figaption for image*/
 figcaption{
     text-align: center;
 }
 
+/*link for merch*/
 figcaption a{
     text-decoration: none;
     color: black;
     font-family: "Norse bold";
     font-size: 20px;
+    transition: 0.3s ease;
 }
 
+figcaption a:hover{
+    text-decoration: underline;
+}
+
+/*image of merch*/
 .carousel img{
     height: 300px;
     object-fit: cover;
@@ -314,6 +347,7 @@ figcaption a{
     margin-left: 14px;
 }
 
+/*right and left arrow icons*/
 .merch i{
     font-size: 20px;
     cursor: pointer;
@@ -330,6 +364,7 @@ figcaption a{
     right: 20px;
 }
 
+/*responsiveness of carousel*/
 @media screen and (max-width: 900px){
     .carousel img{
         width: calc(100%/2);
@@ -342,6 +377,7 @@ figcaption a{
     }
 }
 
+/*community class*/
 .community{
     display: flex;
     justify-content: center;
@@ -349,32 +385,38 @@ figcaption a{
     margin-bottom: 150px;
 }
 
+/*image in community*/
 .com-container img{
     width: 600px;
 }
 
+/*heading and paragraph in community*/
 .com-h-p{
     width: 350px;
     position: relative ;
     bottom: 89px;
 }
 
+/*heading in community*/
 h4{
     font-family: 'Poppins', sans-serif;
     font-size: 32px;
     margin-bottom: 15px;
 }
 
+/*description in community*/
 .desc2{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     text-align: left;    
 }
 
+/*button div*/
 .join{
     margin-top: 50px;
 }
 
+/*join button*/
 .join button{
     color: white;
     border-radius: 50px;
@@ -385,7 +427,7 @@ h4{
     font-size: 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .join button:hover{
@@ -393,43 +435,182 @@ h4{
     opacity: 0.8;
 }
 
+/*button link*/
 .join button a{
     text-decoration: none;
     color: white;
 }
 
+/*community image and text*/
 .com-img, .com-h-p{
     display: inline-block;
 }
 
+/*footer*/
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     height: 30vh;
-    margin: 0px;
+    margin-bottom: 0px;
     padding: 0px;
+    margin-top: 50px;
 }
 
+/*footer class*/
 .footer{
     color: white;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 
+/*footer heading*/
 .footer h3{
     margin-bottom: 15px;
     font-size: 15px;
 }
 
+/*footer paragraph*/
 .footer p{
     font-size: 10px;
 }
 
+/*footer social media icons*/
 .fa-brands{
     font-size: 40px;
     color: rgb(255, 255, 255);
     cursor: pointer;
     margin: 15px 8px;
+}
+
+/*playstation logo*/
+.footer img{
+    margin: 0px;
+}
+
+/*CONTACT STYLINGS*/
+form{
+    font-family: 'Poppins', sans-serif;
+}
+
+form h1{ 
+    font-size: 50px;
+    margin: 20px 0px;
+    font-family: "Norse bold";
+
+}
+
+
+.contact {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+  
+.submit {
+    background-color: rgb(114, 114, 172);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+  
+.submit:hover {
+    opacity: 0.8;
+}
+
+.submit:active {
+    opacity: 0.5;
+}
+
+.submit a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    margin: 30px 0px ;  
+}
+
+.details{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dets-box{
+    display: inline-block;
+    width: calc(80%/3);
+}
+
+.dets-box i{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: rgb(114, 114, 172);
+}
+
+.dets-box p{
+    font-size: 12px;
+}
+
+.dets-box h3{
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.back i{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: 0.3s ease;
+}
+
+.back i:hover{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.back i:active{
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+.thx-container{
+    height: 100vh;
+}
+
+.thx-content{
+    padding: 10px;
+}
+
+.thx{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.thx i{
+    font-size: 200px;
+    margin-bottom: 10px;
 }
