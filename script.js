@@ -47,16 +47,6 @@ arrowIcons.forEach(icon => {
         setTimeout(() => showHideIcons(), 60);
     });
 });
-const autoSlide = () => {
-    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
-    positionDiff = Math.abs(positionDiff);
-    let firstImgWidth = firstImg.clientWidth + 14;
-    let valDifference = firstImgWidth - positionDiff;
-    if(carousel.scrollLeft > prevScrollLeft) {
-        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-    }
-    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-}
 
 const dragStart = (e) => {
     isDragStart = true;

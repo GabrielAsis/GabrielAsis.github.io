@@ -59,7 +59,7 @@ body{
 
 .bgimage{
     margin-top: 41px;
-    background-image: url("Images/gow bg.png");
+    background-image: url("Images/god\ of\ war\ animated\ logo.gif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -144,6 +144,8 @@ body{
     align-items: center;
     border: solid black 2px;
     border-style: dotted;
+    margin-bottom: 150px;
+    margin-top: 10px;
 }
 
 #about-desc{
@@ -152,7 +154,6 @@ body{
 
 #games{
     text-align: center;
-    margin: 0;
     padding: 0;
 }
 
@@ -260,12 +261,18 @@ body{
 
 }
 
+#merch{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
 .merch{
     margin: 0px;
     padding: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .merch .carousel{
@@ -280,10 +287,26 @@ body{
     cursor: grab;
 }
 
+figure{
+    display: inline-block;
+}
+
+figcaption{
+    text-align: center;
+}
+
+figcaption a{
+    text-decoration: none;
+    color: black;
+    font-family: "Norse bold";
+    font-size: 20px;
+}
+
 .carousel img{
     height: 300px;
     object-fit: cover;
-    width: calc(100%/3);
+    width: 450px;
+    height: 400px;
     background: linear-gradient(white, white) padding-box,
     linear-gradient(to bottom right, rgb(21, 21, 52), rgb(114, 114, 172)) border-box;
     border-radius: 15px;
@@ -323,12 +346,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-.com-container{
-
+    margin-bottom: 150px;
 }
 
 .com-container img{
@@ -367,7 +385,17 @@ h4{
     font-size: 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    
+    transition: 0.3s;
+}
+
+.join button:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.join button a{
+    text-decoration: none;
+    color: white;
 }
 
 .com-img, .com-h-p{
