@@ -144,6 +144,8 @@ nav{
     margin: auto;
 }
 
+
+/*ABOUT STYLINGS*/
 /*about section*/
 #about{
     margin: 20px;
@@ -161,6 +163,8 @@ nav{
 #about-desc{
     font-size: 17px;
 }
+
+/*GAMES STYLINGS*/
 
 /*games section*/
 #games{
@@ -219,6 +223,9 @@ nav{
     border-radius: 10px 10px 0px 0px;
     width: 100%;
 }
+
+
+/*SCROLL ANIMATIONS*/
 
 /*slide animation before*/
 .slide-animation{
@@ -280,6 +287,8 @@ nav{
     transition-delay: 200ms;
 
 }
+
+/*MERCH STYLINGS*/
 
 /*merch section*/
 #merch{
@@ -377,6 +386,8 @@ figcaption a:hover{
     }
 }
 
+/*COMMUNITY STYLINGS*/
+
 /*community class*/
 .community{
     display: flex;
@@ -446,6 +457,27 @@ h4{
     display: inline-block;
 }
 
+.art-h{
+    text-align: left;
+    font-size: 40px;
+}
+
+.art-images{
+    display: inline-block;
+    flex-direction: row;
+}
+
+.art-1 img{
+    width: 500px;
+}
+
+.art-2 img{
+    width: 300px;
+    
+}
+
+/*FOOTER STYLINGS*/
+
 /*footer*/
 footer{
     display: flex;
@@ -488,6 +520,7 @@ footer{
 .footer img{
     margin: 0px;
 }
+
 
 /*CONTACT STYLINGS*/
 form{
