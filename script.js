@@ -1,4 +1,4 @@
-// slide scroll animation
+// slide scroll animation from left right
 const slide = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -13,6 +13,20 @@ const slide = new IntersectionObserver((entries) => {
 const slideElements = document.querySelectorAll('.slide-animation');
 slideElements.forEach((el) => slide.observe(el));
 
+//slide scroll animation from right to left
+const slide2 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('slide2');
+        } else {
+            entry.target.classList.remove('slide2');
+        }
+    });
+});
+
+const slideElements2 = document.querySelectorAll('.slide-animation2');
+slideElements2.forEach((el) => slide2.observe(el));
 
 // fade scroll animation
 const fade = new IntersectionObserver((entries) => {

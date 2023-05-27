@@ -38,7 +38,11 @@ html{
 }
 
 body{
-    background-color: #343f4f;
+    background-color: #201d1f;
+    background-image: url("Images/bg\ images.png");
+    background-repeat: repeat;
+    background-position: top;
+    background-size: 100px;
 }
 
 /*background gif*/
@@ -85,7 +89,7 @@ nav{
 }
 
 .sticky{
-    background-image: linear-gradient(to bottom right, rgb(38, 113, 162), rgb(31, 47, 152));
+    background-image: linear-gradient(to bottom right, #7272ac, #343477);
 }
 
 .nav-link{
@@ -113,7 +117,7 @@ nav{
 
 /*main content of page*/
 .main-content{
-    margin: 15px 0px;
+    margin: 50px 0px;
     padding: 0px;
     width: 80%;
     border-radius: 10px;
@@ -175,18 +179,19 @@ nav{
 /*each game's div*/
 .games-box{
     margin: 15px;
-    background-image: linear-gradient(to bottom right, rgb(11, 12, 49), rgb(46, 86, 112),rgb(84, 170, 228));
+    background-image: linear-gradient(to bottom right, rgb(11, 12, 49), #7272ac,rgb(0, 147, 245));
     border-radius: 12px;
     width: 350px;
     display: inline-block;
-    box-shadow: 0 0 15px black;
+    box-shadow: 0 0 10px black;
     transition: 0.1s ease;
 }
 
 .games-box:hover{
-    transform:scale(1.1);
+    transform:scale(1.05);
     cursor: pointer;
     z-index: 2;
+    box-shadow: 0 0 20px black;
 }
 
 .games-title{
@@ -251,6 +256,27 @@ nav{
 /*fade animation after*/
 .fade{
     opacity: 1;
+}
+
+.slide-animation2{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(100%);
+    transition: 1s ease;
+}
+
+.slide2{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+.art-image:first-child{
+    transition-delay:200ms ;
+}
+
+.art-image:last-child{
+    transition-delay:200ms ;
 }
 
 /*delay for each game-box child*/
@@ -323,6 +349,7 @@ nav{
 /*merch image & figcaption*/
 figure{
     display: inline-block;
+    
 }
 
 /*figaption for image*/
@@ -350,10 +377,12 @@ figcaption a:hover{
     width: 450px;
     height: 400px;
     background: linear-gradient(white, white) padding-box,
-    linear-gradient(to bottom right, rgb(21, 21, 52), rgb(114, 114, 172)) border-box;
+    linear-gradient(to bottom right, rgb(71, 71, 96), #7272ac) border-box;
     border-radius: 15px;
     border: 4px solid transparent;
     margin-left: 14px;
+    box-shadow: 0px 0px 4px black;
+
 }
 
 /*right and left arrow icons*/
@@ -389,15 +418,22 @@ figcaption a:hover{
 /*COMMUNITY STYLINGS*/
 
 /*community class*/
-.community{
+#community{
+    margin-bottom: 30px;
+}
+
+.container-2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 150px;
+}
+
+.com-container{
+    width: 80%;
 }
 
 /*image in community*/
-.com-container img{
+.com-img img{
     width: 600px;
 }
 
@@ -433,7 +469,7 @@ h4{
     border-radius: 50px;
     border: none;
     padding: 5px 12px;
-    background-color: rgb(114, 114, 172);
+    background-color: #7272ac;
     cursor: pointer;
     font-size: 20px;
     text-align: center;
@@ -445,6 +481,12 @@ h4{
     transform: scale(1.1);
     opacity: 0.8;
 }
+
+.join button:active{
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
 
 /*button link*/
 .join button a{
@@ -459,21 +501,54 @@ h4{
 
 .art-h{
     text-align: left;
-    font-size: 40px;
+    font-size: 30px;
+    margin-top: 50px;
 }
 
-.art-images{
-    display: inline-block;
-    flex-direction: row;
+.fan-stuff{
+    width: 100%;
 }
 
-.art-1 img{
-    width: 500px;
+.art {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-top: 0px;
+}
+  
+.art-image {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+.art-image  img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom right, rgb(91, 146, 233), #02435b) border-box;
+    border-radius: 15px;
+    border: 3px solid transparent;
 }
 
-.art-2 img{
-    width: 300px;
-    
+@media screen and (max-width: 800px) {
+    .art-image  {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .art-image  {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
 }
 
 /*FOOTER STYLINGS*/
@@ -487,7 +562,7 @@ footer{
     height: 30vh;
     margin-bottom: 0px;
     padding: 0px;
-    margin-top: 50px;
+
 }
 
 /*footer class*/
@@ -646,4 +721,120 @@ hr{
 .thx i{
     font-size: 200px;
     margin-bottom: 10px;
+}
+
+/*GAME PAGE STYILINGS*/
+
+
+.games-page{
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.games-container{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.game-image2{
+    width: 50%;
+    float: left;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.games-dets h1{
+    margin-bottom: 15px;
+    font-family: "Norse bold";
+    font-size: 65px;
+}
+
+.games-dets p{
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.age-rating{
+    margin-top: 55px;
+    margin-bottom: 0px;
+}
+
+.games-dets span{
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+.games-dets img{
+    width: 100px;
+}
+
+.buy{
+    background-color: black;
+    padding: 10px;
+    border-radius: 50px;
+    width: 15.1%;
+}
+
+.buy button{
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding: 8px 20px;
+    background-color: rgb(114, 114, 172);
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease;
+}
+
+.buy button:hover{
+    opacity: 0.8;
+}
+
+.buy button a{
+    text-decoration: none;
+    color: white;
+}
+
+.buy p{
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.games-info{
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.games-info h1{
+    font-size: 40px;
+}
+
+.games-info p{
+    width: 1065px;
+    text-align: justify;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.games-page{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.games-page iframe{
+    margin-bottom: 20px;
+}
+
+.games-page i{
+    position: absolute;
+    left: 175px;
+    top:33px;
 }
