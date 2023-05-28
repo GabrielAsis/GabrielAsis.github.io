@@ -98,3 +98,22 @@ window.addEventListener("scroll", function(){
     var nav=document.querySelector("nav");
     nav.classList.toggle("sticky", window.scrollY > 650)
 })
+
+//character slider
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+});
