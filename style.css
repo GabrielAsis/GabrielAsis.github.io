@@ -81,7 +81,7 @@ nav{
     width: 20%;
     font-family: 'Nunito', sans-serif;    
     font-size: 25px;
-    text-shadow: 0px 0px 15px black;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
     border-radius: 50px;
 }
 
@@ -93,6 +93,8 @@ nav{
 
 .sticky{
     background-image: linear-gradient(to bottom right, #729bac, #345677);
+    box-shadow: 0px 2px 10px black;
+        position: fixed;
 }
 
 .nav-link{
@@ -191,10 +193,16 @@ nav{
 }
 
 .games-box:hover{
-    transform:scale(1.05);
+    transform:scale(1.03);
     cursor: pointer;
     z-index: 2;
     box-shadow: 0 0 20px black;
+}
+
+.games-box:active{
+    opacity: 0.8;
+    transform:scale(1.05);
+
 }
 
 .games-title{
@@ -438,6 +446,8 @@ figcaption a:hover{
 /*image in community*/
 .com-img img{
     width: 600px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 20px;
 }
 
 /*heading and paragraph in community*/
@@ -445,6 +455,7 @@ figcaption a:hover{
     width: 350px;
     position: relative ;
     bottom: 89px;
+    margin-left: 10px;
 }
 
 /*heading in community*/
