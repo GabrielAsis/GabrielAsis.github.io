@@ -2,22 +2,22 @@
 
 @font-face {
     font-family:"God of War";
-    src: url(fonts/GODOFWAR.TTF);
+    src: url(../fonts/GODOFWAR.TTF);
 }
 
 @font-face {
     font-family:"Ragnorak";
-    src: url(fonts/Berserker-Regular.ttf);
+    src: url(../fonts/Berserker-Regular.ttf);
 }
 
 @font-face {
     font-family:"Norse Bold";
-    src: url(fonts/NorseBold-2Kge.otf);
+    src: url(../fonts/NorseBold-2Kge.otf);
 }
 
 @font-face {
     font-family:"Norse";
-    src: url(fonts/Norse-KaWl.otf);
+    src: url(../fonts/Norse-KaWl.otf);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
@@ -41,7 +41,6 @@ html{
 
 body{
     background-color: #201d1f;
-    background-image: url("Images/ice-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -472,7 +471,7 @@ h4{
     border-radius: 50px;
     border: none;
     padding: 5px 12px;
-    background-color: #2b97a8;
+    background-color: #7272ac;
     cursor: pointer;
     font-size: 20px;
     text-align: center;
@@ -592,11 +591,6 @@ footer{
     color: rgb(255, 255, 255);
     cursor: pointer;
     margin: 15px 8px;
-    transition: 0.3s ease;
-}
-
-.fa-brands:hover{
-    transform: translateY(-5px);
 }
 
 /*playstation logo*/
@@ -613,7 +607,7 @@ form{
 form h1{ 
     font-size: 50px;
     margin: 20px 0px;
-    font-family: "Norse bold";
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -636,7 +630,7 @@ input[type=text], select, textarea {
 }
   
 .submit {
-    background-color: rgb(98, 176, 198);
+    background-color: #2b97a8;
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
@@ -679,7 +673,7 @@ hr{
 .dets-box i{
     font-size: 35px;
     margin-bottom: 10px;
-    color: rgb(114, 114, 172);
+    color: #2b97a8;
 }
 
 .dets-box p{
@@ -752,12 +746,14 @@ hr{
     float: left;
     margin-right: 10px;
     border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
 }
 
 .games-dets h1{
     margin-bottom: 15px;
     font-family: "Norse bold";
     font-size: 65px;
+    word-spacing: 17px;
 }
 
 .games-dets p{
@@ -778,6 +774,7 @@ hr{
 
 .games-dets img{
     width: 100px;
+    
 }
 
 .buy{
@@ -785,6 +782,7 @@ hr{
     padding: 10px;
     border-radius: 50px;
     width: 15.8%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
 }
 
 .buy button{
@@ -839,12 +837,71 @@ hr{
 
 .games-page iframe{
     margin-bottom: 20px;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.5);
 }
 
-.games-page i{
+.back2{
     position: absolute;
     left: 175px;
     top:33px;
+}
+
+.reviews-sect{
+    display: flex;
+    flex: wrap;
+    width: 100%;
+}
+
+.see-more a{
+    position: relative;
+    top: 20px;
+    float: right;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.see-more a:hover{
+    position: relative;
+    top: 15px;
+    text-decoration: underline;
+}
+
+
+.reviews{
+    width:500px;
+    margin: 30px 30px 30px 0px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.reviews:nth-child(1){
+    margin-right: 50px;
+}
+
+.reviews i{
+    margin-bottom: 0px;
+    color: #ecde7b;
+    float: left;
+}
+
+.reviews p{
+    width: 475px;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.reviews h4{
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #0c88cb;
+}
+
+.reviews span{
+    color: black;
+    font-size: 12px;
 }
 
 /*CHARACTER STYLINGS*/
@@ -853,7 +910,6 @@ hr{
 }
 
 .swiper {
-    margin-top: 20px;
     width: 80%;
     height: 450px;
     padding-top: 50px;
@@ -864,7 +920,7 @@ hr{
     background-position: center;
     background-size: cover;
     background-image: linear-gradient(to bottom right, #a0c4de, #0f5276, #042a3e);
-    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.2)
 }
 
 .char-dets{
@@ -896,15 +952,12 @@ hr{
     height: 450px;
 }
 
-
-
 .swiper-3d .swiper-slide-shadow, 
 .swiper-3d .swiper-slide-shadow-bottom, 
 .swiper-3d .swiper-slide-shadow-left, 
 .swiper-3d .swiper-slide-shadow-right, 
 .swiper-3d .swiper-slide-shadow-topt{
     background-image: none;
-    box-shadow: none;
 }
 
 

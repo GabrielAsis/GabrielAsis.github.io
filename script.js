@@ -1,4 +1,5 @@
 // slide scroll animation from left right
+//from
 const slide = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
