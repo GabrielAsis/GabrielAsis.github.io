@@ -1,31 +1,37 @@
 /*imported fonts*/
-
 @font-face {
     font-family:"God of War";
     src: url(fonts/GODOFWAR.TTF);
 }
 
+/*imported fonts*/
 @font-face {
     font-family:"Ragnorak";
     src: url(fonts/Berserker-Regular.ttf);
 }
 
+/*imported fonts*/
 @font-face {
     font-family:"Norse Bold";
     src: url(fonts/NorseBold-2Kge.otf);
 }
 
+/*imported fonts*/
 @font-face {
     font-family:"Norse";
     src: url(fonts/Norse-KaWl.otf);
 }
 
+/*google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap');
 
+/*google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/*google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/*google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 *, *::before, *::after{
@@ -34,13 +40,14 @@
     padding: 0px;
 }
 
+/*smooth scrolling*/
 html{
     scroll-behavior: smooth;
 
 }
 
+/*ice background image*/
 body{
-    background-color: #201d1f;
     background-image: url("Images/ice-bg.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -56,7 +63,7 @@ body{
     height: 100vh;
 }
 
-/*navigation bar*/
+/*navigation bar before scrolling down*/
 nav{
     width: 100%;
     display: flex;
@@ -85,28 +92,32 @@ nav{
     border-radius: 50px;
 }
 
-/*sticky nav*/
+/*navigation after scrolling down*/
 .sticky .nav-link{
     padding: 8px;
     font-size: 17px;
 }
 
+/*navigation after scrolling down*/
 .sticky{
     background-image: linear-gradient(to bottom right, #729bac, #345677);
     box-shadow: 0px 2px 10px black;
         position: fixed;
 }
 
+/*nav link transition*/
 .nav-link{
     transition: 0.5s ease;
 }
 
+/*nav link hover effect*/
 .nav-link:hover{
     transition: 0.3s ease;
     background-color: rgba(255, 255, 255, 0.5);
     color: rgba(0, 0, 0);
 }
 
+/*nav link active effect*/
 .nav-link:active{
     transition: 0.2s ease;
     background-color: rgba(255, 255, 255, 1);
@@ -192,6 +203,7 @@ nav{
     transition: 0.1s ease;
 }
 
+/*game div hover effect*/
 .games-box:hover{
     transform:scale(1.03);
     cursor: pointer;
@@ -199,12 +211,14 @@ nav{
     box-shadow: 0 0 20px black;
 }
 
+/*game div active effect*/
 .games-box:active{
     opacity: 0.8;
     transform:scale(1.05);
 
 }
 
+/*game title*/
 .games-title{
     color: rgb(255, 255, 255);
     padding: 5px;
@@ -269,6 +283,7 @@ nav{
     opacity: 1;
 }
 
+/*slide animation before*/
 .slide-animation2{
     opacity: 0;
     filter: blur(5px);
@@ -276,12 +291,14 @@ nav{
     transition: 1s ease;
 }
 
+/*slide animation after*/
 .slide2{
     opacity: 1;
     filter: blur(0px);
     transform: translateX(0);
 }
 
+/*delay for each image gallery in community section*/
 .art-image:first-child{
     transition-delay:200ms ;
 }
@@ -377,6 +394,7 @@ figcaption a{
     transition: 0.3s ease;
 }
 
+/*figcaptoin hover effect*/
 figcaption a:hover{
     text-decoration: underline;
 }
@@ -405,10 +423,12 @@ figcaption a:hover{
     padding: 0px;
 }
 
+/*margin on first child of merch*/
 .merch i:first-child{
     left: 20px;
 }
 
+/*margin on last child of merch*/
 .merch i:last-child{
     right: 20px;
 }
@@ -433,12 +453,14 @@ figcaption a:hover{
     margin-bottom: 30px;
 }
 
+/*container 2*/
 .container-2{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*community container*/
 .com-container{
     width: 80%;
 }
@@ -491,16 +513,17 @@ h4{
     transition: 0.3s ease;
 }
 
+/*join button hover effect*/
 .join button:hover{
     transform: scale(1.1);
     opacity: 0.8;
 }
 
+/*join button active effect*/
 .join button:active{
     transform: scale(1.1);
     opacity: 0.5;
 }
-
 
 /*button link*/
 .join button a{
@@ -513,6 +536,7 @@ h4{
     display: inline-block;
 }
 
+/*gallery header*/
 .art-h{
     text-align: left;
     font-size: 30px;
@@ -523,6 +547,7 @@ h4{
     width: 100%;
 }
 
+/*gallery div*/
 .art {
     display: -ms-flexbox; /* IE10 */
     display: flex;
@@ -531,7 +556,8 @@ h4{
     padding: 0 4px;
     margin-top: 0px;
 }
-  
+
+/*image column*/
 .art-image {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
@@ -539,6 +565,7 @@ h4{
     padding: 0 4px;
 }
   
+/*gallery images*/
 .art-image  img {
     margin-top: 8px;
     vertical-align: middle;
@@ -549,6 +576,7 @@ h4{
     border: 3px solid transparent;
 }
 
+/*responsive gallery*/
 @media screen and (max-width: 800px) {
     .art-image  {
       -ms-flex: 50%;
@@ -556,7 +584,7 @@ h4{
       max-width: 50%;
     }
 }
-  
+
 @media screen and (max-width: 600px) {
     .art-image  {
       -ms-flex: 100%;
@@ -621,6 +649,7 @@ form{
     font-family: 'Poppins', sans-serif;
 }
 
+/*Form header*/
 form h1{ 
     font-size: 50px;
     margin: 20px 0px;
@@ -628,13 +657,14 @@ form h1{
 
 }
 
-
+/*div for form*/
 .contact {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
 
+/*all text input*/
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -645,7 +675,8 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: none;
 }
-  
+
+/*submit button*/
 .submit {
     background-color: rgb(98, 176, 198);
     color: white;
@@ -657,24 +688,29 @@ input[type=text], select, textarea {
     cursor: pointer;
     transition: 0.3s ease;
 }
-  
+
+/*submit button hover effcect*/
 .submit:hover {
     opacity: 0.8;
 }
 
+/*submit button active effcect*/
 .submit:active {
     opacity: 0.5;
 }
 
+/*submit button link*/
 .submit a{
     text-decoration: none;
     color: white;
 }
 
+/*horizontal line*/
 hr{
     margin: 30px 0px ;  
 }
 
+/*div for telephone, address, email, and icons*/
 .details{
     text-align: center;
     margin: 0px;
@@ -682,26 +718,31 @@ hr{
     font-family: 'Poppins', sans-serif;
 }
 
+/*div for each icon and details*/
 .dets-box{
     display: inline-block;
     width: calc(80%/3);
 }
 
+/*icons*/
 .dets-box i{
     font-size: 35px;
     margin-bottom: 10px;
     color: rgb(114, 114, 172);
 }
 
+/*paragraph details*/
 .dets-box p{
     font-size: 12px;
 }
 
+/*header details*/
 .dets-box h3{
     font-size: 20px;
     margin-bottom: 2px;
 }
 
+/*back button*/
 .back i{
     text-decoration: none;
     color: black;
@@ -709,16 +750,19 @@ hr{
     transition: 0.3s ease;
 }
 
+/*back button hover effect*/
 .back i:hover{
     transform: scale(1.1);
     opacity: 0.5;
 }
 
+/*back button active effect*/
 .back i:active{
     transform: scale(1.1);
     opacity: 0.3;
 }
 
+/*container for thank you message*/
 .thx-container{
     height: 100vh;
 }
@@ -727,6 +771,7 @@ hr{
     padding: 10px;
 }
 
+/*div for thank you message*/
 .thx{
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -737,6 +782,7 @@ hr{
     flex-direction: column;
 }
 
+/*check mark*/
 .thx i{
     font-size: 200px;
     margin-bottom: 10px;
@@ -744,7 +790,7 @@ hr{
 
 /*GAME PAGE STYILINGS*/
 
-
+/*div for games page*/
 .games-page{
     max-width: 80%;
     display: flex;
@@ -753,11 +799,13 @@ hr{
     margin: auto;
 }
 
+/*container*/
 .games-container{
     margin-top: 40px;
     margin-bottom: 10px;
 }
 
+/*image of game*/
 .game-image2{
     width: 50%;
     float: left;
@@ -765,32 +813,36 @@ hr{
     border-radius: 20px;
 }
 
+/*name of game*/
 .games-dets h1{
     margin-bottom: 15px;
     font-family: "Norse bold";
     font-size: 65px;
 }
 
+/*details of game*/
 .games-dets p{
     margin-bottom: 25px;
     font-family: 'Poppins', sans-serif;
 }
 
+/*age rating*/
 .age-rating{
     margin-top: 55px;
     margin-bottom: 0px;
 }
 
+/*differnt stylings for details of game*/
 .games-dets span{
     font-weight: bold;
     margin-left: 5px;
 }
 
-
 .games-dets img{
     width: 100px;
 }
 
+/*buy div*/
 .buy{
     background-color: black;
     padding: 10px;
@@ -798,6 +850,7 @@ hr{
     width: 15.8%;
 }
 
+/*buy butoton*/
 .buy button{
     color: white;
     border-radius: 50px;
@@ -811,15 +864,18 @@ hr{
     transition: 0.3s ease;
 }
 
+/*buy button hover effect*/
 .buy button:hover{
     opacity: 0.8;
 }
 
+/*buy button link*/
 .buy button a{
     text-decoration: none;
     color: white;
 }
 
+/*price of game*/
 .buy p{
     color: white;
     display: inline-block;
@@ -827,15 +883,18 @@ hr{
     font-family: 'Poppins', sans-serif;
 }
 
+/*plot, trailer, and reviews div*/
 .games-info{
     margin-top: 10px;
     font-family: 'Poppins', sans-serif;
 }
 
+/*headers for info*/
 .games-info h1{
     font-size: 40px;
 }
 
+/*paragraphs for info*/
 .games-info p{
     width: 1065px;
     text-align: justify;
@@ -848,10 +907,12 @@ hr{
     margin-bottom: 20px;
 }
 
+/*game trailer*/
 .games-page iframe{
     margin-bottom: 20px;
 }
 
+/*back button*/
 .games-page i{
     position: absolute;
     left: 175px;
@@ -863,6 +924,7 @@ hr{
     margin-top: 150px;
 }
 
+/*all of this uses the swiper css given by Swiper Slider*/
 .swiper {
     margin-top: 20px;
     width: 80%;
@@ -878,6 +940,7 @@ hr{
     border-radius: 20px;
 }
 
+/*characer details*/
 .char-dets{
     text-align: center;
     width: 50%;
@@ -887,7 +950,7 @@ hr{
     color: rgb(232, 232, 232);
     text-shadow: 0px 0px 15px black;
 }
-
+/*chracer names*/
 .char-dets h1{
     font-family: "Ragnorak";
     font-size: 35px;
@@ -896,19 +959,21 @@ hr{
     padding-bottom: 5px;
 }
 
+/*character names*/
 .char-dets p{
     margin-top: 15px;
     text-align: justify;
     font-family: 'Poppins', sans-serif;
 }
 
+/*character image*/
 .swiper-slide img{
     width: 40%;
     height: 450px;
 }
 
 
-
+/*removes previous shadow styling*/
 .swiper-3d .swiper-slide-shadow, 
 .swiper-3d .swiper-slide-shadow-bottom, 
 .swiper-3d .swiper-slide-shadow-left, 

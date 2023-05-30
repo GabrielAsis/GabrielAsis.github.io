@@ -1,5 +1,4 @@
 // slide scroll animation from left right
-//from
 const slide = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
@@ -100,7 +99,7 @@ window.addEventListener("scroll", function(){
     nav.classList.toggle("sticky", window.scrollY > 650)
 })
 
-//character slider
+//character slider by Swiper slider
 var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
