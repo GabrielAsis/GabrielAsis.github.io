@@ -192,16 +192,32 @@ nav{
     align-items: center;
     width: 80%;
     margin: auto;
-    margin-bottom: 230px;
-    margin-top: 230px;
+    margin-bottom: 210px;
+    margin-top: 210px;
 }
 
 /*Santa Monica details*/
 .monica-dets{
     position: relative;
     top: 0px;
-    margin-left: 300px;
+    margin-left: 400px;
 }
+
+/*Santa Monica question*/
+#sta-monica h3{
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/*Santa Monica paragraph*/
+#sta-monica p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.9px;
+    text-align: justify;
+    margin: auto;
+}
+
 
 /*Santa Monica logo image*/
 .monica-logo img{
@@ -221,14 +237,14 @@ nav{
 
 /*Santa Monica leaders and crew images div*/
 .monica-images{
-    margin-top: 38px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
 }
 
 /*Santa Monica leaders and crew div*/
 .monica-crew, .monica-leaders{
-    width: 45%;
+    width: 50%;
 }
 
 /*Santa Monica leaders and crew images*/
@@ -243,25 +259,7 @@ nav{
     margin-right: 30px;
 }
 
-/*Santa Monica question*/
-#sta-monica h3{
-    font-family: 'Poppins', sans-serif;
-    text-align: justify;
-    margin-left: 67px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-/*Santa Monica paragraph*/
-#sta-monica p{
-    font-family: 'Poppins', sans-serif;
-    font-size: 12.5px;
-    width: 80%;
-    text-align: justify;
-    margin: auto;
-}
-
 /*GAMES STYLINGS*/
-
 /*games section*/
 #games{
     text-align: center;
